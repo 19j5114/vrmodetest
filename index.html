@@ -9,7 +9,7 @@
 <body>
   <a-scene id="scene" id="scene2"  >
     <a-assets>
-      　<video id="video" src="VRAir23.mp4" preload="auto" muted playsinline autoplay></video>
+      　<video id="video" src="VRAir23.mp4" autoplay loop></video>
     </a-assets>
 
     <a-videosphere src="#video" rotation="0 -90 0" play-on-touch="#scene"></a-videosphere>
@@ -19,16 +19,9 @@
     <a-camera>  
       <a-cursor fuse="true" fuse-timeout="1000"></a-cursor>   
     </a-camera>
-  
+    
+    <a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="stop2.jpeg"></a-box>
   </a-scene>
-   
-   <script>
-      const video = document.getElementById("video");   // 動画の取得
-      btnPlay.addEventListener("click", (e) => {        // クリックされたら
-         //video.setAttribute('autoplay', 'true');
-         video.play();
-      });
-   </script>
      
 </body>
 </html>
