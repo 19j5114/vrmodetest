@@ -21,8 +21,6 @@
    </a-text>
 
     <a-videosphere src="#video" rotation="0 -90 0" play-on-touch="#scene"></a-videosphere>
-    <!-- 動画の autoplay が効かない場合用の、再生・停止ボタン -->
-    <a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="start2.jpeg"></a-box>
     
 
     <!-- 再生・停止ボタンを押すための視線カーソル（スマホ用） -->
@@ -35,8 +33,7 @@
    <script>
       const video = document.getElementById("video");   // 動画の取得
       btnPlay.addEventListener("click", (e) => {        // クリックされたら
-         video.setAttribute('autoplay', 'true');
-         //video.muted = false;
+         //video.setAttribute('autoplay', 'true');
          video.play();
       });
    </script>
