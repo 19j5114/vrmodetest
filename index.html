@@ -4,23 +4,17 @@
   <meta charset="utf-8">
   <title>360度動画</title>
   <script src="aframe.min.js"></script>
-  <script src="play-on-touch.js"></script>
+  <!--<script src="play-on-touch.js"></script>-->
 </head>
 <body>
-  <a-scene id="scene" id="scene2"  >
+  <a-scene id="scene">
     <a-assets>
       　<video id="video" src="city.mp4" autoplay loop="true" muted playsinline></video>
     </a-assets>
 
-    <a-videosphere src="#video" rotation="0 -90 0" play-on-touch="#scene"></a-videosphere>
-    
-
-    <!-- 再生・停止ボタンを押すための視線カーソル（スマホ用） -->
-    <a-camera>  
-      <a-cursor fuse="true" fuse-timeout="1000"></a-cursor>   
-    </a-camera>
-    
-    <a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="stop2.jpg"></a-box>
+    <!--<a-videosphere src="#video" rotation="0 -90 0" play-on-touch="#scene"></a-videosphere>-->
+        
+    <!--<a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="stop2.jpg"></a-box>-->
   </a-scene>
      
 </body>
