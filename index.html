@@ -13,9 +13,21 @@
     </a-assets>
 
     <a-videosphere src="#video" rotation="0 -90 0" play-on-touch="#scene"></a-videosphere>
-        
+    
+    <a-sphere id="link1" position="0 3 -4" scale="1 1 1" src="360VRGG.png" linkbox1></a-sphere>
+    
     <!--<a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="stop2.jpg"></a-box>-->
   </a-scene>
      
+  <script>
+  btnPlay.addEventListener("click", (e) => {        // クリックされたら
+    video.play();                                   // 動画を再生
+    if(playFlag == 0){
+      //setTimeout(setSphere, 28000);
+    }
+    playFlag = 1;
+  });
+  </script>
+  
 </body>
 </html>
