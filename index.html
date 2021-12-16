@@ -16,11 +16,9 @@
     
     <a-box id="play" position="-1 0 -1" scale="0.5 0.5 0.01" src="stopt2.jpg"></a-box>
         
-    <a-entity cursor="rayOrigin: mouse"></a-entity>
-    
-    <a-entity camera look-controls>
-      <a-cursor></a-cursor>
-    </a-entity>
+    <a-camera>
+      <a-cursor fuse="true" fuse-timeout="1000"></a-cursor>
+    </a-camera>
   </a-scene>
      
   <script>
